@@ -1,0 +1,41 @@
+{
+    "blogs": [
+      {
+        "title": "Blog Post 1",
+        "body": "This is a short description of the first blog post. Read more to explore."
+      },
+      {
+        "title": "Blog Post 2",
+        "body": "This is a short description of the second blog post. Learn more inside."
+      },
+      {
+        "title": "Blog Post 3",
+        "body": "This is a short description of the third blog post. Check it out for more info."
+      },
+      {
+        "title": "Blog Post 4",
+        "body": "Here is a short intro to the fourth blog post. Explore to know more."
+      },
+      {
+        "title": "Blog Post 5",
+        "body": "Read this blog post for valuable insights into the latest trends."
+      },
+      {
+        "title": "Blog Post 6",
+        "body": "A brief description of the sixth blog post. Don't miss out!"
+      },
+      {
+        "title": "Blog Post 7",
+        "body": "Here is a preview of the seventh blog post. Read more for detailed info."
+      },
+      {
+        "title": "Blog Post 8",
+        "body": "A short intro about the eighth blog post. Click to read more."
+      },
+      {
+        "title": "Blog Post 9",
+        "body": "Here's a quick preview of the ninth blog post. Check it out!"
+      }
+    ]
+  }
+  
