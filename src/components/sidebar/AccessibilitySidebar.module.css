@@ -1,0 +1,299 @@
+.toggleBtn {
+    position: fixed;
+    bottom: 150px;
+    left: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    border-radius: 50px;
+    color: #fff;
+    border: 5px solid white;
+    cursor: pointer;
+    --indmaincolor: #1c4bb6;
+    background: var(--indmaincolor) !important;
+    transition: all 0.3s ease;
+    z-index: 1000; 
+    
+  }
+  
+  .toggleBtn svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  } 
+  
+  .selector {
+    display: none;
+  }
+  
+  .toggleBtn:hover .selector {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 5px;
+    width: 15px;
+    transition: all 0.3s ease;
+  
+  }
+  
+  
+  
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -450px;
+    width: 450px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -8px 0 25px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 0;
+    transition: left 0.4s ease-out, opacity 0.4s ease-out, box-shadow 0.4s ease-out, width 0.4s ease-out;
+    z-index: 999;
+  }
+  
+  .sidebar.open {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    opacity: 1;
+    width: 32.3%;
+    height: 100%;
+    
+  }
+  
+  .INDmenuHeader_bg {
+    position: absolute;
+    transition: width 0.3s ease; /* Make transition smooth */
+  }
+  
+  .header {
+    position: relative;
+    height: 15%;
+    width: 100%;
+  }
+  .sidebar.expanded {
+    width: 25%;
+  }
+  .closeBtn {
+    position: sticky;
+    left: 22em;
+    top: 1em;
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .txt {
+    position: absolute;
+    padding-left: 8em;
+    padding-top: 1.7em;
+    color: white; 
+  
+  }
+  .expandedTxt{
+    position: sticky;
+    padding-left: 5.5em;
+    padding-top: 1em;
+    color: white; 
+  }
+  .expandedOpt{
+  margin-left: -4em;
+  
+  }
+  
+  
+  .opt {
+    position: fixed;
+    top: 1.7em;
+    left: 16em;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0.2em 3em;
+    background: linear-gradient(135deg, #839eb1, #2c3e50);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .opt:hover {
+    background-color: #34495e;
+  }
+  
+  .languageSelector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  
+  .arr, .eyeOff {
+    position: absolute;
+    top: 1em;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+  
+  
+  .arr {
+    left: 3.5em;
+  }
+  
+  .eyeOff {
+    left: 6em;
+  }
+  
+
+
+
+
+
+
+
+.accessFotter button:hover::after,
+.accessFotter button:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.accessFotter button::after {
+  content: attr(data-tooltip); 
+  position: absolute;
+  top: -70px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #efe7e7; 
+  color: #090909;
+  padding: 10px 15px; 
+  border-radius: 8px; 
+  font-size: 12px;
+  font-weight: 400;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+}
+
+.accessFotter button::before {
+  content: "";
+  position: absolute;
+  top: -9px; 
+  left: 65%; 
+  transform: translateX(-50%) rotate(180deg); 
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #ece4e4 transparent; 
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+
+ 
+.sidebarBody {
+    height: 70%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f8f9fa;
+    transition: all 0.3s ease-in-out;
+}
+      
+    
+      .sidebarFooter {
+        height: 15%;
+        background-color: #1a1a2e;
+        width: 100%;
+      }
+      
+      .accessFotter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 70%;
+      }
+      
+      
+      .copyright-footer {
+        display: flex;
+      }
+      .accessFotter button {
+        position: relative; 
+        border: none;
+        color: white;
+        background-color: #1a1a2e;
+        align-items: center;
+        margin: auto;
+        cursor: pointer;
+        padding: 10px 20px; 
+        font-size: 14px;
+      }
+      
+      .accessFotter button:hover::after,
+      .accessFotter button:hover::before {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .accessFotter button::after {
+        content: attr(data-tooltip); 
+        position: absolute;
+        top: -70px; 
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #efe7e7; 
+        color: #090909;
+        padding: 10px 15px; 
+        border-radius: 8px; 
+        font-size: 12px;
+        font-weight: 400;
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* إضافة ظل */
+      }
+      
+      .accessFotter button::before {
+        content: "";
+        position: absolute;
+        top: -9px; 
+        left: 65%; 
+        transform: translateX(-50%) rotate(180deg); 
+        border-width: 6px;
+        border-style: solid;
+        border-color: transparent transparent #ece4e4 transparent; 
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      
+      
+      
+      .copyrightFooter span {
+        color: white;
+        margin-left: 30%;
+        align-items: center;
+      }
+      
+      .equal {
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+      }
+      
+      .equal:hover {
+        text-decoration: underline;
+      }
+      
